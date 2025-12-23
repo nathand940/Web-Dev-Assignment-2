@@ -4,7 +4,8 @@ Project Name: SkySense
 
 Description:
 
--For this assignment I was tasked with creating a weather app that displays weather and forecast for 7 days for multiple countries across the world. By using Eleventy and Bulma I was able to create a dynamic, mobile-friendly weather dashboard that allows you to navigate to pages displaying the weather forecast for specific countries.
+-For this assignment I was tasked with creating a weather app that displays weather and forecast for 7 days for multiple countries across the world. 
+-By using Eleventy and Bulma I was able to create a dynamic, mobile-friendly weather dashboard that allows you to navigate to pages displaying the weather forecast for specific countries.
 
 Website Features:
 
