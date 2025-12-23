@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="weather-snow">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skysense - Reliable Weather Outlet</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/cloud.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css"
+    />
+    <link rel="stylesheet" href="/css/weather.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        )
+
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            const target = el.dataset.target
+            const $target = document.getElementById(target)
+
+            el.classList.toggle("is-active")
+            $target.classList.toggle("is-active")
+          })
+        })
+      })
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar has-background-black" role="navigation" aria-label="main navigation">
+
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/image/logo.png" alt="Skysense Logo">
+    </a>
+
+    <span
+      class="navbar-burger has-background-black"
+      data-target="navbarMenu"
+      aria-expanded="false"
+      aria-label="menu"
+      role="button"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </span>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu has-background-black">
+
+    <div class="navbar-end">
+      
+        <a class="navbar-item has-text-white" href="/">
+          Home
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/Australia/">
+          Australia
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/Ireland/">
+          Ireland
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/Japan/">
+          Japan
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/Russia/">
+          Russia
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/Spain/">
+          Spain
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/UK/">
+          United Kingdom
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/USA/">
+          USA
+        </a>
+      
+        <a class="navbar-item has-text-white" href="/Preferences/">
+          Settings
+        </a>
+      
+    </div>
+
+  </div>
+</nav>
+    <main class="columns is-multiline is-vcentered weather-surface">
+      <header class="column is-12 has-text-centered has-text-white">
+    <p id="page-heading" class="is-size-1"></p>
+  </header> 
+      
+<div class="column is-12">
+  <section class="card p-5 has-text-centered">
+    <figure class="image is-3by1 mb-4" style="max-width: 800px; margin: 0 auto;">
+    <img 
+    src="https://images.unsplash.com/photo-1628034456699-c4e34656fdd2?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    alt="Snowy landscape in USA">
+    </figure>
+    <h1 class="title is-1">United States of America</h1>
+    <p class="subtitle is-size-3">Today's Weather Forecast:</p>
+    <div class="content has-text-centered">
+      <p class="is-size-1"><strong>🥶 Extreme Cold — -3°C</strong></p>
+      <p class="is-size-1"><strong>💨 Wind speed - 11km/h</strong></p>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="column is-12">
+  <div class="columns is-multiline is-mobile">
+
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">Mon</p>
+          <p class="is-size-2">🌨️</p>
+          <p class="is-size-3">Snowing</p>
+          <p class="has-text-weight-semibold is-size-3">-2°C</p>
+          <p class="is-size-5">💨 11 km/h</p>
+        </section>
+      </div>
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">
+   Tue</p>
+          <p class="is-size-2">☁️</p>
+          <p class="is-size-3">Cloudy</p>
+          <p class="has-text-weight-semibold is-size-3">3°C</p>
+          <p class="is-size-5">💨 12 km/h</p>
+        </section>
+      </div>
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">
+   Wed</p>
+          <p class="is-size-2">🥶</p>
+          <p class="is-size-3">Freezing</p>
+          <p class="has-text-weight-semibold is-size-3">-4°C</p>
+          <p class="is-size-5">💨 11 km/h</p>
+        </section>
+      </div>
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">
+   Thu</p>
+          <p class="is-size-2">🌨️</p>
+          <p class="is-size-3">Snowing</p>
+          <p class="has-text-weight-semibold is-size-3">2°C</p>
+          <p class="is-size-5">💨 15 km/h</p>
+        </section>
+      </div>
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">
+   Fri</p>
+          <p class="is-size-2">❄️</p>
+          <p class="is-size-3">Freezing</p>
+          <p class="has-text-weight-semibold is-size-3">-2°C</p>
+          <p class="is-size-5">💨 13 km/h</p>
+        </section>
+      </div>
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">
+   Sat</p>
+          <p class="is-size-2">🥶</p>
+          <p class="is-size-3">Freezing</p>
+          <p class="has-text-weight-semibold is-size-3">-6°C</p>
+          <p class="is-size-5">💨 12 km/h</p>
+        </section>
+      </div>
+    
+      
+      <div class="column is-one-seventh">
+        <section class="card has-text-centered p-3">
+          <p class="has-text-weight-bold">
+   Sun</p>
+          <p class="is-size-2">🌨️</p>
+          <p class="is-size-3">Snowing</p>
+          <p class="has-text-weight-semibold is-size-3">3°C</p>
+          <p class="is-size-5">💨 11 km/h</p>
+        </section>
+      </div>
+    
+
+  </div>
+</div>
+    </main>
+    <footer class="footer has-background-black has-text-white">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <img class="image is-16x32 is-inline is-centered" src="/image/logo-black.png"> On Demand. Reliable. Accurate.
+        </p>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
