@@ -1,0 +1,32 @@
+<nav class="navbar has-background-black" role="navigation" aria-label="main navigation">
+
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/image/logo.png" alt="Skysense Logo">
+    </a>
+
+    <span
+      class="navbar-burger has-background-black"
+      data-target="navbarMenu"
+      aria-expanded="false"
+      aria-label="menu"
+      role="button"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </span>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu has-background-black">
+
+    <div class="navbar-end">
+      {% for item in collections.all | eleventyNavigation %}
+        <a class="navbar-item has-text-white" href="{{ item.url }}">
+          {{ item.key }}
+        </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</nav>
